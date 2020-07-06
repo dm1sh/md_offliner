@@ -1,3 +1,3 @@
-# article_uploader
+# Article uploader
 
 Tool for uploading articles to the server
