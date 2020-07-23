@@ -1,4 +1,4 @@
-venv/
-tmp_*
+lua_install
+luacov.stats.out
+test*
 .vscode/
-__pycache__/
