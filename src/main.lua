@@ -47,7 +47,7 @@ local function upload_to_server(local_article_directory, server_cred, server_pat
         os.exit(1)
     end
 
-    local status, err = pcall(NetwOps.download_db, server_cred, server_path, local_article_directory)
+    status, err = pcall(NetwOps.download_db, server_cred, server_path, local_article_directory)
     if not status then
         print('Error: ' .. err)
         os.exit(1)
@@ -55,7 +55,7 @@ local function upload_to_server(local_article_directory, server_cred, server_pat
 
     NetwOps.insert_article(local_article_directory, document_name)
 
-    local status, err = pcall(NetwOps.upload_db, server_cred, server_path, local_article_directory)
+    status, err = pcall(NetwOps.upload_db, server_cred, server_path, local_article_directory)
     if not status then
         print('Error: ' .. err)
         os.exit(1)

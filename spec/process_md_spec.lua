@@ -71,7 +71,7 @@ describe("process_md", function()
 
             local content = f:read('a')
 
-            local header
+            local header, _
             _, header = ProcessMD.get_header(content, assets_dir .. 'tmp_dir/and one more.md', true)
             f:close()
 
