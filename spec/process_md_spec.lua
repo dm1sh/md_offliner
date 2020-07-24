@@ -59,8 +59,8 @@ describe("process_md", function()
 
             local content = f:read('a')
 
-            local header
-            content, header = ProcessMD.get_header(content, assets_dir .. 'tmp_dir/some file.md', true)
+            local header, _
+            _, header = ProcessMD.get_header(content, assets_dir .. 'tmp_dir/some file.md', true)
             f:close()
 
             assert.equal('Header_:D', header)
