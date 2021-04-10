@@ -2,9 +2,15 @@
 
 This tool helps to download all images in markdown document and put them into one folder with changed paths
 
+## Dependency installation:
+
+```bash
+luarocks install luasec
+```
+
 ## Usage: 
 
-```
+```bash
 md-parser [-o <output>] [-s <server>] [-c <config>] [-u] [-h]
        <input>
 
