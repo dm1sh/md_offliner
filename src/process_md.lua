@@ -4,7 +4,7 @@ function process_md.get_file_content(path)
     local f, err = io.open(path, "r+")
     assert(f, err)
 
-    local content = f:read("a")
+    local content = f:read("*a")
 
     f:close()
     return content
